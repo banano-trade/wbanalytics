@@ -21,6 +21,7 @@ HTML_TEMPLATE = """
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>wBAN Cross-Chain Analytics</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         :root {
             --bg-primary: #f8f9fa;
@@ -78,6 +79,7 @@ HTML_TEMPLATE = """
         .progress-bar { background-color: var(--accent); }
         .volume-bar { height: 8px; border-radius: 4px; margin-top: 5px; }
         .navbar { background-color: var(--bg-secondary) !important; border-bottom: 1px solid var(--border-color); }
+        .navbar-brand { color: var(--text-primary) !important; }
         .toggle-switch { cursor: pointer; }
         .timestamp { font-size: 0.85rem; color: var(--text-secondary); }
     </style>
@@ -179,7 +181,14 @@ HTML_TEMPLATE = """
         </div>
     </div>
 
-    <footer class="text-center py-4"><small class="text-muted">wBAN Analytics | Data from blockchain</small></footer>
+    <footer class="text-center py-4">
+        <small class="text-muted">wBAN Analytics | Data from blockchain</small>
+        <div class="mt-2">
+            <a href="https://github.com/banano-trade/wbanalytics" target="_blank" rel="noopener" class="text-muted" title="View on GitHub">
+                <i class="fab fa-github fa-lg"></i>
+            </a>
+        </div>
+    </footer>
 
     <script>
         const data = {{ data | tojson }};
@@ -252,7 +261,7 @@ def api_data():
     return jsonify(load_analytics())
 
 if __name__ == "__main__":
-    host = os.getenv("ANALYTICS_HOST", "127.0.0.1")
-    port = int(os.getenv("ANALYTICS_PORT", 5001))
+    host = os.getenv("HOST", "127.0.0.1")
+    port = int(os.getenv("PORT", 5001))
     print(f"wBAN Analytics running at http://{host}:{port}")
     app.run(host=host, port=port, debug=False)
