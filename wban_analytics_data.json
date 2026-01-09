@@ -1,0 +1,123 @@
+{
+  "generated_at": "2026-01-09T11:20:56.609116+00:00",
+  "chains": {
+    "ethereum": {
+      "name": "Ethereum",
+      "lp_address": "0x1f249F8b5a42aa78cc8a2b66EE0bb015468a5f43",
+      "current_block": 24196475,
+      "liquidity": {
+        "wban": 7477680.192082861,
+        "quote_token": "WETH",
+        "quote_amount": 1.1874047957111582,
+        "usd": 7193.528344783713
+      },
+      "1_month": {
+        "swap_count": 38,
+        "volume_wban": 3305933.689521056,
+        "volume_usd": 1590.154104659628
+      },
+      "3_months": {
+        "swap_count": 94,
+        "volume_wban": 7693120.3975953115,
+        "volume_usd": 3700.390911243345
+      }
+    },
+    "polygon": {
+      "name": "Polygon",
+      "lp_address": "0xb556feD3B348634a9A010374C406824Ae93F0CF8",
+      "current_block": 81417362,
+      "liquidity": {
+        "wban": 12389397.518075276,
+        "quote_token": "WETH",
+        "quote_amount": 1.971576402562659,
+        "usd": 11918.600412388416
+      },
+      "1_month": {
+        "swap_count": 615,
+        "volume_wban": 10485838.743309895,
+        "volume_usd": 5043.688435532059
+      },
+      "3_months": {
+        "swap_count": 2582,
+        "volume_wban": 30188012.166029435,
+        "volume_usd": 14520.433851860158
+      }
+    },
+    "bsc": {
+      "name": "BSC",
+      "lp_address": "0x351A295AfBAB020Bc7eedcB7fd5A823c01A95Fda",
+      "current_block": 74605454,
+      "liquidity": {
+        "wban": 1941157.8243166492,
+        "quote_token": "BUSD",
+        "quote_amount": 966.2817424080298,
+        "usd": 1867.3550038361302
+      },
+      "1_month": {
+        "swap_count": 128,
+        "volume_wban": 8147002.647872207,
+        "volume_usd": 3918.6268036000524
+      },
+      "3_months": {
+        "swap_count": 198,
+        "volume_wban": 21572265.470352262,
+        "volume_usd": 10376.043968584734
+      }
+    },
+    "bsc_usdc": {
+      "name": "BSC (USDC)",
+      "lp_address": "0x76B1aB2f84bE3C4a103ef1d2C2a74145414FFA49",
+      "current_block": 74606205,
+      "liquidity": {
+        "wban": 2305465.1071957853,
+        "quote_token": "USDC",
+        "quote_amount": 1143.458515519537,
+        "usd": 2217.8113238202013
+      },
+      "1_month": {
+        "swap_count": 362,
+        "volume_wban": 11772666.160357915,
+        "volume_usd": 5662.534696470553
+      },
+      "3_months": {
+        "swap_count": 526,
+        "volume_wban": 28467214.853707552,
+        "volume_usd": 13692.445672484795
+      }
+    },
+    "arbitrum": {
+      "name": "Arbitrum",
+      "lp_address": "0xBD80923830B1B122dcE0C446b704621458329F1D",
+      "current_block": 419524210,
+      "liquidity": {
+        "wban": 10050585.970534418,
+        "quote_token": "WETH",
+        "quote_amount": 1.5848816389283238,
+        "usd": 9668.4626919347
+      },
+      "1_month": {
+        "swap_count": 101,
+        "volume_wban": 3848425.3276267922,
+        "volume_usd": 1851.0540983352107
+      },
+      "3_months": {
+        "swap_count": 300,
+        "volume_wban": 11364538.551488057,
+        "volume_usd": 5466.22939788024
+      }
+    }
+  },
+  "totals": {
+    "1_month": {
+      "swap_count": 1244,
+      "volume_wban": 37559866.56868787,
+      "volume_usd": 18066.058138597502
+    },
+    "3_months": {
+      "swap_count": 3700,
+      "volume_wban": 99285151.43917261,
+      "volume_usd": 47755.543802053275
+    }
+  },
+  "wban_price_usd": 0.00048099
+}
